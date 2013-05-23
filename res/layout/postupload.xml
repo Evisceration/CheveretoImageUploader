@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/bImageViewer"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="View Image"/>
+
+    <Button
+            android:id="@+id/bImageShort"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bImageViewer"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bImageViewer"
+            android:text="View Image (Short Link)"/>
+
+    <Button
+            android:id="@+id/bImageShortened"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bImageShort"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bImageShort"
+            android:text="View Image (Direct Link)"/>
+
+    <Button
+            android:id="@+id/bImageDelete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bImageShortened"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bImageShortened"
+            android:text="Delete Image"/>
+
+    <Button
+            android:id="@+id/bBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Back"/>
+
+</RelativeLayout>
