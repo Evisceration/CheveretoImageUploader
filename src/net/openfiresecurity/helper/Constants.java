@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2013. Alexander Martinz.
+ */
+
 package net.openfiresecurity.helper;
 
 import android.annotation.SuppressLint;
